@@ -26,7 +26,7 @@ var NgSiPipe = (function () {
     return NgSiPipe;
 }());
 NgSiPipe.decorators = [
-    { type: Pipe, args: [{ name: 'siSuffix' },] },
+    { type: Pipe, args: [{ name: 'NgSiPipe' },] },
 ];
 /**
  * @nocollapse
