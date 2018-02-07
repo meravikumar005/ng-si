@@ -1,6 +1,6 @@
 import { Pipe , PipeTransform} from "@angular/core";
 declare let window:any;
-@Pipe({name:'siSuffix'})
+@Pipe({name:'NgSiPipe'})
 
 export class NgSiPipe implements PipeTransform {
   transform(value:number, decimal:number ) {
