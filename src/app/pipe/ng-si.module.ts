@@ -1,11 +1,11 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
-import { SiSuffix } from "./si-suffix.pipe";
+import { NgSiPipe } from "./ng-si.pipe";
 
 @NgModule({
   declarations:[
-    SiSuffix
+    NgSiPipe
   ],
   imports:[
 
@@ -14,10 +14,10 @@ import { SiSuffix } from "./si-suffix.pipe";
 
   ],
   exports:[
-    SiSuffix
+    NgSiPipe
   ]
 })
 
-export class SiSuffixModule {
+export class SiPipeModule {
 
 }

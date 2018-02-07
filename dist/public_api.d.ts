@@ -1,1 +1,1 @@
-export * from "./pipe/si-suffix.module";
+export * from "./pipe/ng-si.module";

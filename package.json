@@ -1,10 +1,10 @@
 {
-  "name": "ng-si-suffix",
-  "version": "2.0.2",
-  "description": "Add SI suffix in small and big numbers.",
+  "name": "ng-si",
+  "version": "1.0.0",
+  "description": "Change large number in SI format.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/meravikumar005/ng-si-suffix"
+    "url": "https://github.com/meravikumar005/ng-si"
   },
   "keywords": [
     "number format",
@@ -13,16 +13,17 @@
     "angular",
     "angular2+",
     "angular 4",
-    "number"
+    "number",
+    "si format"
   ],
   "author": {
     "name": "Ravi Kumar"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/meravikumar005/ng-si-suffix/issues"
+    "url": "https://github.com/meravikumar005/ng-si/issues"
   },
-  "homepage":"https://github.com/meravikumar005/ng-si-suffix",
+  "homepage":"https://github.com/meravikumar005/ng-si",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

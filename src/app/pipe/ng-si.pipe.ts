@@ -2,7 +2,7 @@ import { Pipe , PipeTransform} from "@angular/core";
 declare let window:any;
 @Pipe({name:'siSuffix'})
 
-export class SiSuffix implements PipeTransform {
+export class NgSiPipe implements PipeTransform {
   transform(value:number, decimal:number ) {
     let suffixes = [ 'k', 'M', 'G', 'T', 'P', 'E'];
     if(value === null || value === undefined) {

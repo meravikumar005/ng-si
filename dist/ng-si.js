@@ -1,6 +1,6 @@
 import { NgModule, Pipe } from '@angular/core';
 
-class SiSuffix {
+class NgSiPipe {
     /**
      * @param {?} value
      * @param {?} decimal
@@ -23,36 +23,36 @@ class SiSuffix {
         }
     }
 }
-SiSuffix.decorators = [
+NgSiPipe.decorators = [
     { type: Pipe, args: [{ name: 'siSuffix' },] },
 ];
 /**
  * @nocollapse
  */
-SiSuffix.ctorParameters = () => [];
+NgSiPipe.ctorParameters = () => [];
 
-class SiSuffixModule {
+class SiPipeModule {
 }
-SiSuffixModule.decorators = [
+SiPipeModule.decorators = [
     { type: NgModule, args: [{
                 declarations: [
-                    SiSuffix
+                    NgSiPipe
                 ],
                 imports: [],
                 providers: [],
                 exports: [
-                    SiSuffix
+                    NgSiPipe
                 ]
             },] },
 ];
 /**
  * @nocollapse
  */
-SiSuffixModule.ctorParameters = () => [];
+SiPipeModule.ctorParameters = () => [];
 
 /**
  * Generated bundle index. Do not edit.
  */
 
-export { SiSuffixModule, SiSuffix as ɵa };
-//# sourceMappingURL=ng-si-suffix.js.map
+export { SiPipeModule, NgSiPipe as ɵa };
+//# sourceMappingURL=ng-si.js.map

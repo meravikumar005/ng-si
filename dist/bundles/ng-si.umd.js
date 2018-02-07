@@ -1,18 +1,18 @@
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core')) :
 	typeof define === 'function' && define.amd ? define(['exports', '@angular/core'], factory) :
-	(factory((global['ng-si-suffix'] = {}),global.ng.core));
+	(factory((global['ng-si'] = {}),global.ng.core));
 }(this, (function (exports,core) { 'use strict';
 
-var SiSuffix = (function () {
-    function SiSuffix() {
+var NgSiPipe = (function () {
+    function NgSiPipe() {
     }
     /**
      * @param {?} value
      * @param {?} decimal
      * @return {?}
      */
-    SiSuffix.prototype.transform = function (value, decimal) {
+    NgSiPipe.prototype.transform = function (value, decimal) {
         var /** @type {?} */ suffixes = ['k', 'M', 'G', 'T', 'P', 'E'];
         if (value === null || value === undefined) {
             return null;
@@ -28,41 +28,41 @@ var SiSuffix = (function () {
             return (value / Math.pow(1000, exp)).toFixed(2) + suffixes[exp - 1];
         }
     };
-    return SiSuffix;
+    return NgSiPipe;
 }());
-SiSuffix.decorators = [
+NgSiPipe.decorators = [
     { type: core.Pipe, args: [{ name: 'siSuffix' },] },
 ];
 /**
  * @nocollapse
  */
-SiSuffix.ctorParameters = function () { return []; };
-var SiSuffixModule = (function () {
-    function SiSuffixModule() {
+NgSiPipe.ctorParameters = function () { return []; };
+var SiPipeModule = (function () {
+    function SiPipeModule() {
     }
-    return SiSuffixModule;
+    return SiPipeModule;
 }());
-SiSuffixModule.decorators = [
+SiPipeModule.decorators = [
     { type: core.NgModule, args: [{
                 declarations: [
-                    SiSuffix
+                    NgSiPipe
                 ],
                 imports: [],
                 providers: [],
                 exports: [
-                    SiSuffix
+                    NgSiPipe
                 ]
             },] },
 ];
 /**
  * @nocollapse
  */
-SiSuffixModule.ctorParameters = function () { return []; };
+SiPipeModule.ctorParameters = function () { return []; };
 
-exports.SiSuffixModule = SiSuffixModule;
-exports.ɵa = SiSuffix;
+exports.SiPipeModule = SiPipeModule;
+exports.ɵa = NgSiPipe;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
-//# sourceMappingURL=ng-si-suffix.umd.js.map
+//# sourceMappingURL=ng-si.umd.js.map

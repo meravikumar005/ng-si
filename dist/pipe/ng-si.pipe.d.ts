@@ -1,4 +1,4 @@
 import { PipeTransform } from "@angular/core";
-export declare class SiSuffix implements PipeTransform {
+export declare class NgSiPipe implements PipeTransform {
     transform(value: number, decimal: number): string | number;
 }

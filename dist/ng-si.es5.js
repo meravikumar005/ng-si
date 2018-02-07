@@ -1,13 +1,13 @@
 import { NgModule, Pipe } from '@angular/core';
-var SiSuffix = (function () {
-    function SiSuffix() {
+var NgSiPipe = (function () {
+    function NgSiPipe() {
     }
     /**
      * @param {?} value
      * @param {?} decimal
      * @return {?}
      */
-    SiSuffix.prototype.transform = function (value, decimal) {
+    NgSiPipe.prototype.transform = function (value, decimal) {
         var /** @type {?} */ suffixes = ['k', 'M', 'G', 'T', 'P', 'E'];
         if (value === null || value === undefined) {
             return null;
@@ -23,38 +23,38 @@ var SiSuffix = (function () {
             return (value / Math.pow(1000, exp)).toFixed(2) + suffixes[exp - 1];
         }
     };
-    return SiSuffix;
+    return NgSiPipe;
 }());
-SiSuffix.decorators = [
+NgSiPipe.decorators = [
     { type: Pipe, args: [{ name: 'siSuffix' },] },
 ];
 /**
  * @nocollapse
  */
-SiSuffix.ctorParameters = function () { return []; };
-var SiSuffixModule = (function () {
-    function SiSuffixModule() {
+NgSiPipe.ctorParameters = function () { return []; };
+var SiPipeModule = (function () {
+    function SiPipeModule() {
     }
-    return SiSuffixModule;
+    return SiPipeModule;
 }());
-SiSuffixModule.decorators = [
+SiPipeModule.decorators = [
     { type: NgModule, args: [{
                 declarations: [
-                    SiSuffix
+                    NgSiPipe
                 ],
                 imports: [],
                 providers: [],
                 exports: [
-                    SiSuffix
+                    NgSiPipe
                 ]
             },] },
 ];
 /**
  * @nocollapse
  */
-SiSuffixModule.ctorParameters = function () { return []; };
+SiPipeModule.ctorParameters = function () { return []; };
 /**
  * Generated bundle index. Do not edit.
  */
-export { SiSuffixModule, SiSuffix as ɵa };
-//# sourceMappingURL=ng-si-suffix.es5.js.map
+export { SiPipeModule, NgSiPipe as ɵa };
+//# sourceMappingURL=ng-si.es5.js.map
