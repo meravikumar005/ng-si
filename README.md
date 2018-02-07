@@ -11,5 +11,5 @@ import  SiSuffixModule module from ng-si-suffix and add in import section.
 
 
 ## In your code 
-`{{5000 | siSuffix:2}}`
-`//Result 5.00K`
+`{{5000 | siSuffix:2}} //Result 5.00K`
+`{{5000 | siSuffix}} //Result 5K`

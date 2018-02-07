@@ -1,6 +1,6 @@
 {
-  "name": "ng-si-prefix",
-  "version": "2.0.1",
+  "name": "ng-si-suffix",
+  "version": "2.0.2",
   "description": "Add SI suffix in small and big numbers.",
   "repository": {
     "type": "git",
