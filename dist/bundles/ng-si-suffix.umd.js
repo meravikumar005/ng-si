@@ -1,7 +1,7 @@
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core')) :
 	typeof define === 'function' && define.amd ? define(['exports', '@angular/core'], factory) :
-	(factory((global['ng-si-prefix'] = {}),global.ng.core));
+	(factory((global['ng-si-suffix'] = {}),global.ng.core));
 }(this, (function (exports,core) { 'use strict';
 
 var SiSuffix = (function () {
@@ -65,4 +65,4 @@ exports.ɵa = SiSuffix;
 Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
-//# sourceMappingURL=ng-si-prefix.umd.js.map
+//# sourceMappingURL=ng-si-suffix.umd.js.map
